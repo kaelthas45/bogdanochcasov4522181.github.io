@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Анкета</title>
+		<style>
+			form{
+			border: 4px double black;
+			padding: 10px;
+			width: 380px;
+			margin-left: auto;
+			margin-right: auto;
+			background:rgba(255,255,255,0.6);}
+			
+			font{line-height: 1.5;}
+			
+			body {
+			background: url(Photos/fons.jpg) no-repeat;
+			background-size: 100%;}
+		</style>
+	</head>
+
+	<body>
+		<center><h1><u>Анкета</u></h1></center>
+		
+		<form name="f1" method="get" action="bogdanochcasov@yandex.ru">
+			<input name="link" type="hidden" value="index.php" />
+			<font color = "blue">Фамилия:</font> <br/>
+			<input name="login" type="text" size="25" maxlength="30" value="" placeholder="Фамилия"/> </br>
+			<font color = "blue">Имя:</font> <br/>
+			<input name="login" type="text" size="25" maxlength="30" value="" placeholder="Имя"/> </br>
+			<font color = "blue">Отчество:</font> <br/>
+			<input name="login" type="text" size="25" maxlength="30" value="" placeholder="Отчество"/> </br>
+			<hr>
+			<font color = "blue">Пароль:</font> <br/>
+			<input name="pd" type="password" size="25" maxlength="30" value="" placeholder="Пароль"/> <br />
+			<hr>
+			<font color = "blue">Введите дату рождения:</font><br/>
+			<select name="day"  aria-required="true" size = "1">
+					<option value="" selected disabled>День</option>
+					<option value="1">1</option>	<option value="2">2</option>	 <option value="3">3</option>
+					<option value="4">4</option>	<option value="5">5</option>	 <option value="6">6</option>
+					<option value="7">7</option>	<option value="8">8</option>	 <option value="9">9</option>
+					<option value="10">10</option>	<option value="11">11</option>	 <option value="12">12</option>
+					<option value="13">13</option>	<option value="14">14</option>	 <option value="15">15</option>
+					<option value="16">16</option>	<option value="17">17</option>	 <option value="18">18</option>
+					<option value="19">19</option>	<option value="20">20</option>	 <option value="21">21</option>
+					<option value="22">22</option>	<option value="23">23</option>	 <option value="24">24</option>
+					<option value="25">25</option>	<option value="26">26</option>	 <option value="27">27</option>
+					<option value="28">28</option>	<option value="29">29</option>	 <option value="30">30</option>
+					<option value="31">31</option>
+			</select>
+			<select name="month"  aria-required="true" size = "1">
+					<option value="" selected disabled>Месяц</option>
+					<option value="1">Январь</option>
+					<option value="2">Февраль</option>
+					<option value="3">Март</option>
+					<option value="4">Апрель</option>
+					<option value="5">Май</option>
+					<option value="6">Июнь</option>
+					<option value="7">Июль</option>
+					<option value="8">Август</option>
+					<option value="9">Сентябрь</option>
+					<option value="10">Октябрь</option>
+					<option value="11">Ноябрь</option>
+					<option value="12">Декабрь</option>
+			</select>
+			<select name="age"  aria-required="true" size = "1">
+					<option value="" selected disabled>Год</option>
+					<option value="1">1980</option>		<option value="2">1981</option>		<option value="3">1982</option>
+					<option value="4">1983</option>		<option value="5">1984</option>		<option value="6">1985</option>
+					<option value="7">1986</option>		<option value="8">1987</option>		<option value="9">1988</option>
+					<option value="10">1989</option>	<option value="11">1990</option>	<option value="12">1991</option>
+					<option value="13">1992</option>	<option value="14">1993</option>	<option value="15">1994</option>
+					<option value="16">1995</option>	<option value="17">1996</option>	<option value="18">1997</option>
+					<option value="19">1999</option>	<option value="20">2000</option>	<option value="21">2001</option>
+					<option value="22">2002</option>	<option value="23">2003</option>	<option value="24">2004</option>
+					<option value="25">2005</option>	<option value="26">2006</option>	<option value="27">2007</option>
+					<option value="28">2008</option>	<option value="29">2009</option>	<option value="30">2010</option>		
+			</select>
+			<hr>
+			<font color = "blue">Укажите самый удобный способ для связи с вами:</font> <br/>
+			<p><input type="radio" name="R" value="V1"><input name="text" type="text" size="25" maxlength="30" value="" placeholder="Домаший телефон"/><small><font color = "green"> Домаший телефон</font></small></p>
+			<p><input type="radio" name="R" value="V2"><input name="text" type="text" size="25" maxlength="30" value="" placeholder="Рабочий телефон"/><small><font color = "green"> Рабочий телефон</font></small></p>
+			<p><input type="radio" name="R" value="V3"><input name="text" type="text" size="25" maxlength="30" value="" placeholder="Электронная почта"/><small><font color = "green"> Электронная почта</font></small></p>
+			<hr>
+			<font color = "blue">Укажите ваше образование:</font> <br/>
+			<select name="studies"  aria-required="true" size = "1">
+					<option value="" selected disabled>Образование</option>
+					<option value="1">Нигде не учился</option>
+					<option value="2">Дошкольное</option>
+					<option value="3">Начальное общее</option>
+					<option value="4">Основное общее</option>
+					<option value="5">Среднее общее</option>
+					<option value="6">Среднее профессиональное</option>
+					<option value="7">Высшее — бакалавриат</option>
+					<option value="8">Высшее — специалитет, магистратура</option>
+					<option value="9">Высшее — подготовка кадров высшей квалификации</option>
+			</select>
+			<hr>
+			<font color = "blue">Немного о себе:</font> <br/>
+			<textarea name="comment" id="comment" cols="48" rows="8"></textarea>
+			<hr>
+			<input type = "reset" name = "1" value = "Сброс">
+			<input type = "submit" name = "1" value = "Послать">
+		</form>
+	</body>
+</html>
